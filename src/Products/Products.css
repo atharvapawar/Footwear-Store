@@ -1,0 +1,67 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    z-index: 0;
+}
+
+.card {
+    margin: 20px;
+    border: 2px solid #ededed;
+    padding: 0;
+    /* remove padding so image sits flush against the card border */
+    width: 13rem;
+    /* keep card width consistent with previous image size */
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 12rem;
+    margin-bottom: 1rem;
+}
+
+.product-img {
+    display: block;
+    width: 13rem;
+    /* fixed width to match previous layout */
+    height: 12rem;
+    /* fixed height so cards are uniform */
+    object-fit: contain;
+    /* show whole image with no left/right cropping */
+    border-radius: 0;
+    margin: 0;
+}
+
+.card-details {
+    padding: 16px;
+    /* spacing for the text/content area inside the card */
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card-reviews {
+    margin-bottom: 1rem;
+}
+
+.ratings-start {
+    color: #d5ab55;
+}
+
+.total-reviews {
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bag-icon {
+    color: #535353;
+}
