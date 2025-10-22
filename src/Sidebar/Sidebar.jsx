@@ -6,8 +6,8 @@ import Colors from "./Colors/Colors";
 const Sidebar = () => {
   return (
     <section className="sidebar">
+      <h1 className="">🛒</h1>
       <div className="logo-container"></div>
-      <h1>🛒</h1>
       <Category />
       <Price />
       <Colors />
