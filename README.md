@@ -1,16 +1,30 @@
-# React + Vite
+# 🛒 E-Commerce Footwear Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An online platform designed for buying and selling footwear — just like a retail shoe store!
+This project allows users to browse, search, and purchase a variety of footwear including shoes, boots, sandals, and more. Sellers can list new products, manage inventory, and track sales.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* User authentication (sign-up/login)
+* Product catalog with filtering and search
+* Shopping cart and checkout system
+* Admin panel for managing products and orders
+* Responsive design for all devices
 
-## React Compiler
+## 🧩 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** HTML, CSS, JavaScript (or React)
+* **Backend:** Node.js / Express
+* **Database:** MongoDB (or MySQL)
+* **Authentication:** JWT / Passport.js
 
-## Expanding the ESLint configuration
+## 🎯 Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project replicates the functionality of a retail footwear shop, providing an intuitive and smooth online shopping experience.
+
+## 📦 Future Enhancements
+
+* Payment gateway integration
+* Order tracking
+* Product reviews and ratings
+* Recommendation system
