@@ -6,11 +6,14 @@ import Colors from "./Colors/Colors";
 const Sidebar = () => {
   return (
     <section className="sidebar">
-      <h1 className="">🛒</h1>
-      <div className="logo-container"></div>
-      <Category />
-      <Price />
-      <Colors />
+      <div className="logo-container">
+        <h1>🛒</h1>
+      </div>
+      <div className="sidebar-content">
+        <Category />
+        <Price />
+        <Colors />
+      </div>
     </section>
   );
 };

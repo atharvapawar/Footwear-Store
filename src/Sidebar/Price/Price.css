@@ -1,0 +1,29 @@
+.sidebar-section {
+    width: 100%;
+}
+
+.price-title {
+    margin-top: 0;
+}
+
+.sidebar-items {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-label-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.label-text {
+    margin-left: 36px;
+    color: #333;
+}
