@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Nav from "./Navigation/Nav";
 import Navigation from "./Navigation/Navigation";
 import Products from "./Products/Products";
@@ -6,6 +7,9 @@ import Sidebar from "./Sidebar/Sidebar";
 import "./index.css";
 
 function App() {
+
+  const [first, setfirst] = useState(second)
+
   return (
     <div>
       <Sidebar />

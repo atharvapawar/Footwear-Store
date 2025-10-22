@@ -1,11 +1,17 @@
 import React from "react";
+import Input from "../../components/input";
 
 const Colors = () => {
   return (
     <div className="sidebar-section">
       <h2 className="sidebar-title price-title">Colors</h2>
       <div className="sidebar-items">
-        <label
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+        {/* <label
           htmlFor="color-all"
           className="sidebar-label-container color-title"
         >
@@ -37,7 +43,7 @@ const Colors = () => {
           <input type="radio" name="color" id="color-white" />
           <span className="checkmark"></span>
           <span className="label-text">White</span>
-        </label>
+        </label> */}
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import Input from "../../components/input";
 import "./Price.css";
 
 const Price = () => {
@@ -5,7 +6,12 @@ const Price = () => {
     <div className="sidebar-section">
       <h2 className="sidebar-title price-title">Price</h2>
       <div className="sidebar-items">
-        <label htmlFor="price-all" className="sidebar-label-container">
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+        {/* <label htmlFor="price-all" className="sidebar-label-container">
           <input type="radio" name="price" id="price-all" defaultChecked />
           <span className="checkmark"></span>
           <span className="label-text">All</span>
@@ -29,7 +35,7 @@ const Price = () => {
           <input type="radio" name="price" id="price-over-150" />
           <span className="checkmark"></span>
           <span className="label-text">Over $150</span>
-        </label>
+        </label> */}
       </div>
     </div>
   );
