@@ -8,7 +8,7 @@ const Nav = () => {
       <input
         type="text"
         className="search-input"
-        placeholder="Enter your seach shoes"
+        placeholder="Enter your search shoes"
         name=""
         id=""
       />

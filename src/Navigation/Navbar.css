@@ -1,10 +1,12 @@
 .nav-container {
     display: flex;
-    border-radius: 2px solid #f3f3f3;
-    justify-content:space-around;
+    border: 2px solid #f3f3f3;
+    border-radius: 6px;
+    justify-content: space-between;
     padding: 20px;
     z-index: 999;
     margin-left: 2rem;
+    align-items: center;
 }
 
 input {

@@ -1,11 +1,24 @@
 import React from "react";
 
-const Input = () => {
+const Input = ({ handleChange, value, title, name, color }) => {
+  const id = `${name}-${value}`;
+  const checkmarkStyle = color
+    ? color === "white"
+      ? { background: "white", border: "1px solid #ccc" }
+      : { background: color, border: "none" }
+    : {};
+
   return (
-    <label htmlFor="price-all" className="sidebar-label-container">
-      <input type="radio" name="test" id="test-all" />
-      <span className="checkmark"></span>
-      <span className="label-text">All</span>
+    <label htmlFor={id} className="sidebar-label-container">
+      <input
+        onChange={handleChange}
+        value={value}
+        type="radio"
+        name={name}
+        id={id}
+      />
+      <span className="checkmark" style={checkmarkStyle}></span>
+      <span className="label-text">{title}</span>
     </label>
   );
 };

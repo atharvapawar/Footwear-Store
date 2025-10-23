@@ -27,3 +27,8 @@
     margin-left: 36px;
     color: #333;
 }
+
+.all {
+    background: linear-gradient(blue, crimson);
+    color: white;
+}
