@@ -6,7 +6,7 @@
 }
 
 .sidebar {
-    width: 260px;
+    width: 250px;
     position: fixed;
     height: 100vh;
     background: white;
@@ -37,3 +37,4 @@
     flex-direction: column;
     gap: 1.5rem;
 }
+

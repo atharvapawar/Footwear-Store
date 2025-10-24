@@ -5,7 +5,7 @@
     justify-content: space-between;
     padding: 20px;
     z-index: 999;
-    margin-left: 2rem;
+    margin-left: 0rem;
     align-items: center;
 }
 
@@ -14,7 +14,7 @@ input {
     border: none;
     background-color: #f7f6f6;
     outline: none;
-    margin-left: 20px;
+    margin-left: 18.5rem;
     border-radius: 5px;
     position: relative;
     width: 14rem;
