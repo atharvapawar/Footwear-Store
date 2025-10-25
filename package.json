@@ -1,14 +1,26 @@
 {
-  "name": "project1",
+  "name": "modern-shoe-store",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A modern, responsive shoe store built with React and Vite",
+  "keywords": [
+    "react",
+    "vite",
+    "ecommerce",
+    "shoes",
+    "modern-ui"
+  ],
+  "author": "Your Name",
   "scripts": {
-    "dev": "vite",
-    "optimize-images": "node ./scripts/optimize-images.js",
+    "dev": "vite --host",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix",
+    "optimize-images": "node ./scripts/optimize-images.js",
+    "analyze": "npm run build && npx vite-bundle-analyzer dist",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.1.1",

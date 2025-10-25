@@ -1,83 +1,145 @@
-.sidebar-section {
-    width: 100%;
-}
-
-.sidebar-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-}
-
-.sidebar-items {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
+/* Modern Input Component Styles */
 .sidebar-label-container {
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 35px;
-    padding-right: 8px;
+    padding: var(--space-3) var(--space-4);
     width: 100%;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
     user-select: none;
+}
+
+.sidebar-label-container:hover {
+    background: var(--gray-50);
+    border-color: var(--primary-color);
+    transform: translateX(4px);
+}
+
+.sidebar-label-container:focus-within {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .sidebar-label-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    width: 0;
+    height: 0;
 }
 
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 18px;
-    width: 18px;
-    background-color: #eee;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: var(--gray-200);
     border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+    flex-shrink: 0;
 }
 
-.sidebar-label-container:hover input~.checkmark {
-    background-color: #e0e0e0;
+.sidebar-label-container:hover .checkmark {
+    background-color: var(--gray-300);
+    transform: scale(1.05);
 }
 
 .sidebar-label-container input:checked~.checkmark {
-    background-color: #2196f3;
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
 }
 
 .checkmark::after {
     content: "";
     position: absolute;
     display: none;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--white);
+    transition: all var(--transition-fast);
 }
 
 .sidebar-label-container input:checked~.checkmark::after {
     display: block;
+    animation: fadeIn 0.2s ease-out;
 }
 
-.sidebar-label-container .checkmark::after {
-    top: 5px;
-    left: 5px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
+/* White swatch special handling */
+.checkmark.swatch-white::after {
+    background: var(--gray-800);
+}
+
+/* Gradient swatches */
+.checkmark[style*="background-image"] {
+    background-color: transparent !important;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--gray-300);
+}
+
+.checkmark[style*="background-image"]:hover {
+    border-color: var(--primary-color);
 }
 
 .label-text {
-    margin-left: 36px;
-    color: #333;
+    margin-left: var(--space-3);
+    color: var(--gray-700);
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-fast);
 }
 
-.line {
-    margin-top: 3rem;
-    border-color: #f7f7f7;
+.sidebar-label-container:hover .label-text {
+    color: var(--primary-color);
+}
+
+.sidebar-label-container input:checked~.label-text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Focus states for accessibility */
+.sidebar-label-container:focus-within .checkmark {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar-label-container {
+        padding: var(--space-2) var(--space-3);
+    }
+
+    .checkmark {
+        height: 18px;
+        width: 18px;
+    }
+
+    .checkmark::after {
+        top: 5px;
+        left: 5px;
+        width: 8px;
+        height: 8px;
+    }
 }
